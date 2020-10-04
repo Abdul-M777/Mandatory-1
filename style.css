@@ -1,0 +1,72 @@
+body {
+    background: black no-repeat;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+#apiDiv {
+    border: double 2px lightgray;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+    #apiDiv input, #apiDiv button {
+        font-size: 25px;
+        color: black;
+    }
+
+    #apiDiv h4 {
+        margin: 10px 0;
+    }
+
+   
+
+    #apiDiv #message {
+        padding-top: 10px;
+    }
+
+        #apiDiv #message .resultDiv {
+            background: white;
+            display: inline-block;
+
+        }
+
+            #apiDiv #message .resultDiv > p {
+                color: black;
+                display: inline-block;
+                width: 95%;
+                padding: 10px;
+                border-bottom: double 2px wheat;
+            }
+
+            #apiDiv #message .resultDiv .result, .result2 {
+                width: 23%;
+                height: 300px;
+                padding: 30px;
+                float: left;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                #apiDiv #message .resultDiv .result img, .result2 img {
+                    width: 75%;
+                }
+
+                #apiDiv #message .resultDiv .result p, .result2 p{
+                    margin: 0%;
+                }
+
+                    #apiDiv #message .resultDiv .result p a, .result2 p a{
+                        color: gray;
+                        text-decoration: none;
+                        font-size: 20px;
+                        height: 100px;
+                    }
+
+                        #apiDiv #message .resultDiv .result p a:hover, .result2 p a:hover {
+                            text-decoration: underline;
+                        }

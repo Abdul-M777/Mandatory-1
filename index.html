@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TMDB</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>TMDB</h1>
+        <div class="container">
+            <div id="apiDiv">
+                <h4>Enter name and press submit</h4>
+                <input type="text" placeholder="Search person" id="personInput">
+                <input type="text" placeholder="Search movie" id="movieInput">
+                <button id="submit">Submit Person</button>
+                <button id="submit2">Submit Movie</button>
+                <div id="message"></div>
+            </div>
+        </div>
+
+        <!--Modal-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!--Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="modalTitleH4"></h4>
+                    </div>
+                    <div class="modal-body" id="modalBodyDiv">                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn_default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script src="movie.js"></script>
+    </body>
+</html>
