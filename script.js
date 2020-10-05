@@ -59,7 +59,7 @@ $(document).ready(function() {
 
                         }
                 
-                resultHtml.append("</div>");
+                
                 $("#message").html(resultHtml);
             },
            

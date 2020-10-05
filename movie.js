@@ -24,11 +24,11 @@ function CallAPI2() {
                         + "<p><a>" + result2["results"][i]["title"] + " "+ result2["results"][i]["original_language"] + "</a></p>"
                         + "<p><a>" + date +
                         "</a></p></div>")
-                        console.log(result2);
+                        
                     }
                     
             
-            resultHtml2.append("</div>");
+            
             $("#message").html(resultHtml2);
         },
         error: function (xhr, status, error) {
