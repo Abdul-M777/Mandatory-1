@@ -19,6 +19,10 @@ h1 {
         color: black;
     }
 
+    #yearInput{
+        width: 100px;
+    }
+
     #apiDiv h4 {
         margin: 10px 0;
     }

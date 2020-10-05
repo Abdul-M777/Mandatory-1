@@ -10,8 +10,7 @@ $(document).ready(function() {
 
 function CallAPI2() {
     $.ajax({
-        url: "https://api.themoviedb.org/3/search/movie?&query=" + $("#movieInput").val(),
-        data: { "api_key": "dc662b7f1d2f741b834a79e3ebf185e5" },
+        url: "https://api.themoviedb.org/3/search/movie?api_key=dc662b7f1d2f741b834a79e3ebf185e5&query=" + $("#movieInput").val()+"&primary_release_year="+$("#yearInput").val(),
         dataType: "json",
         success: function (result2) {
             var resultHtml2 = $("<div class=\"resultDiv\"><p>Movies</p>");
@@ -54,8 +53,8 @@ $("#message").on("click", ".result2", function () {
             
             
 
-            var resultHtml2 = "<p>Release Date: "+date+"</p><p>" +"Language: "+ language + "</p>";
-            resultHtml2 += "<p>"+runtime + "</p>" +"<p>"+ overview + "</p>"+"<p>"+"HomePage: "+result2["homepage"]+"</p><p>Genre: </p>";
+            var resultHtml2 = "<p>Release Year: "+date+"</p><p>" +"Language: "+ language + "</p>";
+            resultHtml2 += "<p>"+runtime + "</p>" +"<p>"+ overview + "</p>"+"<p>"+"HomePage: <a href="+result2["homepage"]+">" + result2["homepage"]+ "</a></p><p>Genre: </p>";
             
         for (i = 0; i < result2["genres"].length; i++) {
            resultHtml2 += "<ul><li>"+result2["genres"][i]["name"]+"</li> </ul>";

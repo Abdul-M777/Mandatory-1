@@ -22,7 +22,7 @@ $(document).ready(function() {
                 var homepage = result["homepage"] == null ? "" : result["homepage"];
 
                 var resultHtml = "<p>Job: "+activity+"</p><p>" + biography + "</p>";
-                resultHtml += "<p>Birthday: " + result["birthday"]  + deceased + "</p><p>Place of Birth: " + result["place_of_birth"]+"</p><p>HomePage: <a href="+result["homepage"]+">" + homepage+ "</a></p>";
+                resultHtml += "<p>Birthday: " + result["birthday"]  + deceased + "</p><p>Place of Birth: " + result["place_of_birth"]+"</p><p>HomePage: <a href="+homepage+">" + homepage+ "</a></p>";
 
                 for (i = 0; i < result["credits"]["cast"].length; i++) {
                     resultHtml += "<ul><li>"+result["credits"]["cast"][i]["title"]+" --- "+result["credits"]["cast"][i]["release_date"].substr(0,4)+" --- Acting"+"</li></ul>"
