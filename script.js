@@ -31,14 +31,13 @@ $(document).ready(function() {
                 for (i = 0; i < result["credits"]["crew"].length; i++) {
                     resultHtml += "<ul><li>"+result["credits"]["crew"][i]["title"]+" ----  "+result["credits"]["crew"][i]["release_date"].substr(0,4)+" ----  " +result["credits"]["crew"][i]["job"]+"</li></ul>"
                 }
+                
 
                 $("#modalBodyDiv").html(resultHtml)
 
                 $("#myModal").modal("show");
             },
-            error: function (xhr, status, error) {
-                $("#message").html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText) 
-            }
+            
         });
     });
 

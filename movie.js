@@ -31,9 +31,7 @@ function CallAPI2() {
             
             $("#message").html(resultHtml2);
         },
-        error: function (xhr, status, error) {
-            $("#message").html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
-        }
+        
     });
 }
 
